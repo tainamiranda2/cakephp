@@ -12,5 +12,7 @@
 ###  bin/cake bake  migration Users
 ### criando campos:  bin/cake  migrations migrate
 
-##
-###
+## criando classes seed  com vlaores fakes par ao banco
+
+###  bin/cake bake seed USer 
+### 

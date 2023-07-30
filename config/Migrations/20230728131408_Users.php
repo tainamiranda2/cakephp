@@ -16,7 +16,7 @@ class Users extends AbstractMigration
     {
      $table=   $this->table( 'users');
     //adicionando colunas
-     $table->addColumn('firstnName', 'string', [
+     $table->addColumn('firstName', 'string', [
         'limit'=>100,
         'null'=>false,
 

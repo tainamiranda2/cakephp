@@ -14,5 +14,43 @@ class Post extends AbstractMigration
      */
     public function change()
     {
+
+    $table=$this->table('post');
+    
+    $table->addColumn('title', 'string',[
+        'null'=>false,
+        'limit'=>100
+    ]);
+
+    $table->addColumn('slug', 'string',[
+        'null'=>false,
+        'limit'=>150
+    ]);
+    //pegar de quem é o usuario
+
+    $table->addColumn('user_id', 'integer',[
+        'null'=>false,
+       
+    ]);
+    $table->addColumn('content', 'text',[
+        'null'=>false,
+    ]);
+    //horario que criar o valor do campo
+    $table->addColumn('created_at', 'timestamp', [
+        'default'=>'CURRENT_TIMESTAMP',
+    ]);
+    //horario que atualizar o valor do campo
+    $table->addColumn('update_at', 'timestamp', [
+        'default'=>'CURRENT_TIMESTAMP',
+        'update'=> 'CURRENT_TIMESTAMP'
+    ]);
+
+    //pegando usar_id
+    $table->addForeignKey('user_id','users', 'id',[
+        'delete'=>'CASCADE'
+    ]);
+
+    $table->create();
+
     }
 }
