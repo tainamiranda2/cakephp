@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cursos-cakephp</title>
-</head>
-<body>
-    <h1>Bem-vindo a plataforma de cursos</h1>
+<?php
 
+$this->layout='master';
 
-</body>
-</html>
+?>
+<ul>
+<li><a href="/">Home</a></li>
+
+<li><a href="/about">Sobre</a></li>
+<li><a href="/products">Produtos</a></li>
+<li><a href="/users">Usuários</a></li>
+</ul>
