@@ -10,7 +10,7 @@
 <body>
    
     <div class="container">
-    <h2>Curso de cakephp</h2>
+    <h2>Curso de cakephp </h2>
 
     <?= $this->fetch('content')?>
 

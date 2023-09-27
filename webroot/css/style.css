@@ -3,3 +3,7 @@ body{
     background: #859;
     color: #fff;
 }
+li {
+    list-style: none;
+    display: flexs;
+}

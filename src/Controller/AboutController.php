@@ -18,9 +18,9 @@ class AboutController extends AppController
     public function index()
     {
         //$about = $this->paginate($this->About);
-        var_dump("about");
-       // $this->set(compact('about'));
-       die();
+    //s    var_dump("about");
+       $this->set(compact('about'));
+       //die();
     }
 
     /**
